@@ -14,7 +14,7 @@ function searchPublication(searchValue) {
         }
     })
 
-     errorMsg.style.display = found ? "none" : "block"
+    errorMsg.style.display = found ? "none" : "block"
 }
 
 //search event on input

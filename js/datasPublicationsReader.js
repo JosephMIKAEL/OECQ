@@ -29,8 +29,7 @@ try {
 
         let rightSection = createElement("div", "right-section")
         let date = createElement("h4", "", data.date)
-        let link = createElement("a", "", "Read More")
-        link.href = data.link
+        let link = createElement("a", "", "Read More")        
 
         rightSection.appendChild(date)
         rightSection.appendChild(link)
