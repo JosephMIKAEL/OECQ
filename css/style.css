@@ -25,11 +25,17 @@
     font-size: 1.1em;
 }
 
-#home #last-news {
-    text-align: left;
-}
 #home #missions summary {
     font-size: 1.3em;
+}
+
+#home #last-news {
+    text-align: left;
+    width: 70vw;
+}
+
+#last-news .container small{
+    display: none;
 }
 /* TITLE */
 h1 {
@@ -47,7 +53,7 @@ h1 span {
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 200%;
-    animation: gradientAnim 2s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+    animation: gradientAnimvar(--tr) cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
 #home section > h2, #about h2 {
@@ -86,7 +92,7 @@ h1 span {
 }
 
 #home #logos img:nth-child(2) {
-    animation-delay: 1.2s;
+    animation-delay: 1var(--tr);
 }
 
 #home #logos img:nth-child(3) {
@@ -131,7 +137,7 @@ h1 span {
     box-shadow: 0 .5rem 1rem var(--shadow);
     background-color: var(--background);
     border: 2px solid var(--background);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 #home .card-content h2 {
@@ -140,7 +146,7 @@ h1 span {
     font-weight: 500;
     font-size: 1.6rem;
     letter-spacing: 2px;
-    transition: .2s;
+    transition: var(--tr);
 }
 
 #home .card:hover h2 {
@@ -165,7 +171,7 @@ h1 span {
     text-align: center;
     box-shadow: 0 5px 10px var(--shadow);
     cursor: pointer;
-    transition: .2s;
+    transition: var(--tr);
 }
 
 #home .card a:hover {
@@ -173,12 +179,12 @@ h1 span {
     color: var(--text);
     border: 2px solid var(--accent);
     box-shadow: none;
-    transition: .2s;
+    transition: var(--tr);
 }
 
 #home .card:hover {
     box-shadow: 0px var(--shadow);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 #home .card .bottom {
@@ -317,7 +323,7 @@ h1 span {
     place-items: center;
     background-color: var(--background);
     box-shadow: 0px 5px 10px var(--shadow);
-    transition: .2s;
+    transition: var(--tr);
     cursor: pointer;
 }
 
@@ -341,7 +347,7 @@ h1 span {
     height: 100%;
     aspect-ratio: 1;
     box-shadow: 0 10px 20px var(--shadow);
-    transition: .2s;
+    transition: var(--tr);
 
 }
 
@@ -354,12 +360,10 @@ h1 span {
     background-color: transparent;
     transform: translateY(-3.5rem);
     box-shadow: 0 .5rem 1rem var(--shadow);
-    transition: .2s;
+    transition: var(--tr);
 }
 
-#last-news .container small{
-    display: none;
-}
+
 
 /* |---------------------------ABOUT---------------------------| */
 #about {
@@ -458,15 +462,11 @@ h1 span {
     font-size: 2rem;   
 }
 
-
-
-#contact {
-    display: grid;
-    place-items: center;
-}
-
-#contact img {
-    width: 70%;
+.highlight {
+    background: var(--linearPrimaryAccent);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
 }
 
 /* TEAM DETAILS */
@@ -486,7 +486,6 @@ h1 span {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    /* box-shadow: 0 0.5rem 1rem var(--shadow); */
     padding: 1.5rem;
     gap: 2rem;
 }
@@ -496,7 +495,7 @@ h1 span {
 }
 #about .member img {
     width: 100%;
-    transition: .2s;
+    transition: var(--tr);
 }
 #about .member:hover img {
     scale: 1.3;
@@ -512,7 +511,15 @@ h1 span {
     height: 100%;
 }
 
+/* CONTACT */
+#contact {
+    display: grid;
+    place-items: center;
+}
 
+#contact img {
+    width: 70%;
+}
 
 /* |---------------------------PUBLICATIONS---------------------------| */
 .container {
@@ -524,7 +531,7 @@ h1 span {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .content {
@@ -534,7 +541,7 @@ h1 span {
     position: relative;
     color: var(--text);
     font-size: 15px;
-    transition: .2s;
+    transition: var(--tr);
 }
 .image {
     aspect-ratio: 1;
@@ -561,7 +568,7 @@ h1 span {
     text-align: center;
     border: 2px solid var(--primary);
     text-transform: uppercase;
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .content p {
@@ -587,32 +594,32 @@ h1 span {
     border-top: 1rem solid transparent;
     border-bottom: 1rem solid transparent;
     border-right: 1rem solid var(--primary);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .container:hover .container-arrow {
     border-right: 0rem solid transparent;
     border-left: 1rem solid var(--primary);
-    transition: .2s;
+    transition: var(--tr);
 } 
 
 .container small {
     position: absolute;
 
     transform: translateX(-7rem);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .container:hover{
     transform: translateX(1rem);
     box-shadow: 0 .5rem 1rem var(--shadow);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .container small {
     transform: translateX(-8rem);
     color: var(--primary);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .container a:hover  {
@@ -621,7 +628,7 @@ h1 span {
     color: var(--text);
     box-shadow: none;
     cursor: pointer;
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .container .right-section {
@@ -657,14 +664,6 @@ h1 span {
 
 #search label {
     font-size: 1.6rem;
-}
-
-strong {
-    /* -webkit-background-clip: text;
-    background: var(--linearPrimaryAccent);
-    color: transparent !important; */
-    color: var(--primary);
-    font-size: 1.2em;
 }
 
 #search #search-bar {
@@ -720,13 +719,13 @@ strong {
     position: absolute;
     color: var(--text);
     transform: translateX(-7rem);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .container:hover small {
     transform: translateX(-8rem);
     color: var(--primary);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 /* FOOTER */
@@ -761,14 +760,14 @@ footer p {
 
     cursor: pointer;
     z-index: 10;
-    transition: .2s;
+    transition: var(--tr);
 }
 
 .arrowTop path {
     fill: var(--background);
     stroke-width: .5rem;
     stroke: var(--text);
-    transition: .2s;
+    transition: var(--tr);
 }
 
 /* SCROLLBAR */

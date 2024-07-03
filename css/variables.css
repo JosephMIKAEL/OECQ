@@ -9,18 +9,7 @@ body[data-theme="light"] {
     --secondary: #d4d6df;
     --accent: #00ff00;
 
-    --error: #cc0033;
-    --light-error: #ffa8a8;
-
-    --non-changeable-white: #ffffff;
-    --non-changeable-black: #212121;
-    --non-changeable-secondary: #F2F4FB;
-
     --shadow: rgba(0, 0, 0, 0.2);
-
-    --linearPrimarySecondary: linear-gradient(#0028ad, #b2b7cb);
-    --linearPrimaryAccent: linear-gradient(45deg, #0028ad, #00ff00);
-    --linearSecondaryAccent: linear-gradient(#b2b7cb, #00ff00);
 }
 
 /* DARK THEME BODY VARIABLES */
@@ -31,20 +20,23 @@ body[data-theme="dark"] {
     --secondary: #1f253a;
     --accent: #00ff00;
 
-    --error: #cc0033;
-    --light-error: #ffa8a8;
+    --shadow: rgba(36, 31, 31, 0.2);
+}
+:root {
 
     --non-changeable-white: #ffffff;
     --non-changeable-black: #212121;
     --non-changeable-secondary: #F2F4FB;
 
-    --shadow: rgba(36, 31, 31, 0.2);
-    
+    --error: #cc0033;
+    --light-error: #ffa8a8;
+
     --linearPrimarySecondary: linear-gradient(#0028ad, #b2b7cb);
     --linearPrimaryAccent: linear-gradient(45deg, #0028ad, #00ff00);
     --linearSecondaryAccent: linear-gradient(#b2b7cb, #00ff00);
+    
+    --tr: .2s;
 }
-
 /* GLOBAL PARAMETERS */
 * {
     margin: 0;
