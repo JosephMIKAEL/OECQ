@@ -648,6 +648,7 @@ h1 span {
 
 /* PUBLICATION PAGE -> SEARCH */
 #search-publication {
+    min-height: 100vh;
     padding: 25vh 15vw 0;
 }
 
