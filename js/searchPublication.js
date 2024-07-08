@@ -1,3 +1,6 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 // search publications
 function searchPublication(searchValue) {
     const publications = document.querySelectorAll(".container")

@@ -1,3 +1,6 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 try {
     // fetch datas with asynchrone function
     async function fetchDatasPublications() {
@@ -48,11 +51,11 @@ try {
         if (parentElement) publications.forEach(data => createPublication(data, parentElement))
     }
 
-// display all publications
-displayPublications()
+    // display all publications in the publications page
+    displayPublications()
 
-// display latest 2 publications
-displayPublications(2)
+    // display latest 2 publications in the home page
+    displayPublications(2)
 
 } catch (error) {
     console.error(error)

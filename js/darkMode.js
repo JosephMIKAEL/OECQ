@@ -1,12 +1,15 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 let darkModeBtn = document.querySelector("#darkmode")
 let body = document.querySelector("body")
 
 // set the right theme
 function setTheme(theme) {
     body.setAttribute("data-theme", theme)
-    localStorage.setItem("theme", theme)
-    darkModeBtn.textContent = theme === "dark" ? "Classic'Theme" : "Eco'Theme"
-}
+//     localStorage.setItem("theme", theme)
+//     darkModeBtn.textContent = theme === "dark" ? "Classic'Theme" : "Eco'Theme"
+// }
 
 // set the initial theme based on localStorage
 setTheme(localStorage.getItem("theme") || "light")

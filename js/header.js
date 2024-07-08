@@ -1,3 +1,6 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 let header = document.querySelector("header")
 let darkBtn = document.querySelector("#darkmode")
 let toTopBtn = document.querySelector(".arrowTop")
@@ -20,7 +23,7 @@ function btnTopSwap(btnDisplay) {
 window.addEventListener("scroll", () => {
     // if you scroll more than 20px down
     if (window.scrollY > 20) { 
-        headerSwap("0 10px 15px var(--secondary)","12vh", ".7rem", "var(--background)")
+        headerSwap("var(--bxs)","12vh", ".7rem", "var(--background)")
         btnTopSwap("block")
     } else {
         headerSwap("none","20vh", "3rem", "var(--background)")

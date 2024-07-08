@@ -1,3 +1,6 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
 /* FONT IMPORT  */
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -8,8 +11,6 @@ body[data-theme="light"] {
     --primary: #0028ad;
     --secondary: #d4d6df;
     --accent: #00ff00;
-
-    --shadow: rgba(0, 0, 0, 0.2);
 }
 
 /* DARK THEME BODY VARIABLES */
@@ -19,14 +20,15 @@ body[data-theme="dark"] {
     --primary: #527aff;
     --secondary: #1f253a;
     --accent: #00ff00;
-
-    --shadow: rgba(36, 31, 31, 0.2);
 }
 :root {
 
     --non-changeable-white: #ffffff;
     --non-changeable-black: #212121;
     --non-changeable-secondary: #F2F4FB;
+
+    --shadow: rgba(0, 0, 0, 0.2);
+    --bxs: 0 .5rem 1rem var(--shadow);
 
     --error: #cc0033;
     --light-error: #ffa8a8;
