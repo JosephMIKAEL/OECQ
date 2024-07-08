@@ -24,8 +24,8 @@ const btnTopSwap = (btnDisplay) => {
 
 let swapNav = () => {
     menu.addEventListener("click", () => {
-        console.log("swaped")
         mobileNav.classList.toggle("active")
+        mobileNav.classList == "active" ? (menu.style.backgroundColor = "var(--error)", menu.textContent = "Close") : (menu.style.backgroundColor = "var(--primary)", menu.textContent = "Menu")
     })
 }
 
