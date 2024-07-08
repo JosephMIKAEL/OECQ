@@ -37,7 +37,7 @@
         padding: 7vh 0;
     }
     #home h1 {
-        font-size: 2em;
+        font-size: 1.4em;
         padding: 0 2rem;
         text-align: center;
     }
@@ -58,7 +58,7 @@
     }
     body #home #missions #missions-description {
         padding: 0;
-    font-size: 1em;
+        font-size: 1em;
     }
     body #home #missions details  {
         width: 90%;
