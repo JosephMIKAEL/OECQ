@@ -53,7 +53,7 @@ h1 span {
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 200%;
-    animation: gradientAnimvar(--tr) cubic-bezier(0.19, 1, 0.22, 1) infinite;
+    animation: gradientAnim 2s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
 #home section > h2, #about h2 {
@@ -464,6 +464,7 @@ h1 span {
 
 .highlight {
     background: var(--linearPrimaryAccent);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-weight: 700;
