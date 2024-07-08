@@ -46,11 +46,13 @@ body[data-theme="dark"] {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: "REM", sans-serif;
     background-color: var(--background);
 }
 
 body, html {
     min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }

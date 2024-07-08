@@ -7,9 +7,62 @@
 @import url(./header.css);
 /* ANIMATIONS IMPORT */
 @import url(./animations.css);
+/* RESPONSIVE */
+@import url(./responsive.css);
 
 /* |---------------------------HOME---------------------------| */
-
+#menu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1rem 0 0 1rem;
+    width: 100vw;
+}
+#menu img {
+    width: 9.4rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+#menu-toggle {
+    color: var(--text);
+    border: 2px solid var(--primary);
+    padding: 1.6rem 3.5rem;
+    background-color: var(--background);
+    z-index: 30000;
+}
+body #menu ul {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 9rem 1rem;
+    gap: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 100vh;
+    width: 0vw;
+    z-index: 29999;
+    transition: var(--tr);
+    background-color: var(--secondary);
+}
+body #mobile-nav.active {
+    display: flex;
+    width: 100%;
+    transition: var(--tr);
+}
+body #mobile-nav li {
+    padding: 1rem 2rem;    
+    width: 10rem;   
+    text-align: center;
+    background-color: var(--primary);             
+}
+body #mobile-nav li a {
+    background-color: var(--primary);             
+    color: var(--background);
+}
 /* MAIN */
 #home {
     width: 100%;
@@ -44,7 +97,7 @@
 h1 {
     color: var(--text);
     text-align: center;
-    font-size: 4rem;
+    font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -52,7 +105,7 @@ h1 {
 h1 span {
     background: var(--linearPrimaryAccent);
     color: transparent;
-    font-size: 4rem;
+    font-size: 1em;
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 200%;
@@ -288,7 +341,7 @@ h1 span {
 #home #financial-organizations {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -337,10 +390,10 @@ h1 span {
     padding: 0 2rem 2rem 2rem;
     background-color: var(--background);
     color: var(--text);
-    text-align: center;
     line-height: 1.6;
     font-size: 1.2rem;
     font-weight: 300;
+    text-align: justify;
     font-style: italic;
 }
 
@@ -536,7 +589,7 @@ h1 span {
     width: 140%;
     position: relative;
     color: var(--text);
-    font-size: 15px;
+    font-size: 1em;
     transition: var(--tr);
 }
 .image {

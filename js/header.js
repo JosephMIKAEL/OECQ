@@ -6,6 +6,9 @@ let darkBtn = document.querySelector("#darkmode")
 let toTopBtn = document.querySelector(".arrowTop")
 let logo = document.querySelector("header img")
 
+let mobileNav = document.querySelector("#mobile-nav")
+let menu = document.querySelector("#menu-toggle")
+
 // change header parameters
 const headerSwap = (headerBoxShadow, headerHeight, headerPadding, headerBackColor) => {
     header.style.boxShadow = headerBoxShadow
@@ -19,6 +22,13 @@ const btnTopSwap = (btnDisplay) => {
     toTopBtn.style.display = btnDisplay
 }
 
+let swapNav = () => {
+    menu.addEventListener("click", () => {
+        console.log("swaped")
+        mobileNav.classList.toggle("active")
+    })
+}
+
 // event on scroll
 window.addEventListener("scroll", () => {
     // if you scroll more than 20px down
@@ -30,3 +40,5 @@ window.addEventListener("scroll", () => {
         btnTopSwap("none")
     }
 })
+
+swapNav()

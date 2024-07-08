@@ -1,0 +1,133 @@
+/*
+  * Author: Nathan Boisleux 2024 *
+*/
+/* RESPONSIVE STYLES */
+@media (max-width: 1200px) {
+    header nav ul {
+        gap: 3rem;
+    }
+    header nav ul li {
+        width: 7rem;
+    }
+    header nav ul li:nth-child(1) img {
+        width: 100%;
+        background-color: transparent;
+    }
+    header #darkmode {
+        width: 7rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 1030px) {
+    header nav ul {
+        gap: 1.5rem;
+    }
+    header nav ul li {
+        width: 5rem;
+    }
+    header nav ul li:nth-child(1) img {
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    body #home {
+        padding: 7vh 0;
+    }
+    #home h1 {
+        font-size: 2em;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    body #home section > h2, #about h2 {
+        font-size:2em;
+        padding: 0 1rem;
+    }
+    header {
+        display: none;
+    }
+    body #menu{
+        display: flex;
+    }
+    body #home #logos {
+        height: 7rem;
+        gap: 1rem;
+        padding: 0;
+    }
+    body #home #missions #missions-description {
+        padding: 0;
+    font-size: 1em;
+    }
+    body #home #missions details  {
+        width: 90%;
+    }
+    body #home #missions summary {
+        padding: 1rem 2rem;
+    }
+    body #home #last-news {
+        width: 100%;
+    }
+    body #home #last-news .container {
+        width: 90%;
+        flex-direction: column;
+    }
+    body #home #last-news .container .content {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    body .container .right-section {
+        align-items: center;
+        margin: 0 auto;
+    }
+    body .container .right-section a {
+        padding: 1rem 2rem;
+    }
+    body #home #last-news .container:hover{
+        transform: translateX(.5rem);
+    }
+    body #home #cards {
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    body #home #cards .card {
+        gap: 2rem;
+        width: 90%;
+    }
+    body #home .quote .backImg {
+        width: 100px;
+        height: 100px;
+    }
+    body #home .card p {
+        padding: 0;
+        font-size: .9em;
+    }
+    body #home #quotes .quote {
+        width: 90%;
+    }
+    body #home #quotes .quote p{
+        padding: 0 .5rem;
+        font-size: .6rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    body #quotes::-webkit-scrollbar {
+        width: 1rem;
+    }
+    #home #financial-organizations {
+        flex-direction: column;
+    }
+    body #home #finance #france, body #home #finance #europe, body #bpi {
+        width: 100%;
+        min-height: 30vh;
+    }
+    body #home #finance {
+        padding: 1rem;
+        font-size: 1em;
+    }
+}
