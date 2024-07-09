@@ -19,7 +19,7 @@
     }
 }
 
-@media (max-width: 1030px) {
+@media screen and (max-width: 1030px) {
     header nav ul {
         gap: 1.5rem;
     }
@@ -32,7 +32,8 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    /* HOME PAGE */
     body #home {
         padding: 7vh 0;
     }
@@ -41,8 +42,8 @@
         padding: 0 2rem;
         text-align: center;
     }
-    body #home section > h2, #about h2 {
-        font-size:2em;
+    body #home section > h2, body #about h2 {
+        font-size: 2em;
         padding: 0 1rem;
     }
     header {
@@ -129,5 +130,51 @@
     body #home #finance {
         padding: 1rem;
         font-size: 1em;
+    }
+    /* ABOUT PAGE */
+    body #about {
+        padding: 0;
+    }
+    body #about #map-locations, body #about #map-locations #map-img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 2vh 2vh 20vh;
+    }
+    #about .marker span {
+        padding: .1rem .2rem;
+        font-size: .6rem;
+        left: -35px;
+        top: 230%;
+    }
+    #about .about-project {
+        margin: 2vh 0 5vh;
+        line-height: 1.3;
+        font-size: 1em;
+        width: 95%;
+        padding: 0 1rem;
+    }
+    body #about section:nth-child(1), body #about section:nth-child(5), body #about section:nth-child(6) {
+        margin: 2vh;
+    }
+    body #about #members {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    body #about #members .member {
+        font-size: 1em;
+        min-width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body #about #map-locations, body #about #map-locations #map-img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 2vh ;
     }
 }
