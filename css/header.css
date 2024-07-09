@@ -68,13 +68,18 @@ header nav ul li:nth-child(4) a:hover{
 }
 
 /* THEME BUTTON */
-header #darkmode {
-    width: 8rem;
-    height: 3rem;
+header #darkmode, #menu ul li:nth-last-child(1) {
+padding: 1rem 2rem;
     color: var(--non-changeable-white);
     background: var(--linearPrimaryAccent);
     font-weight: 700;
     border: none;
     cursor: pointer;
     transition: .2s;
+}
+#menu ul li:nth-last-child(1) button {
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    color: var(--non-changeable-white);
 }

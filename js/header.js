@@ -27,6 +27,12 @@ let swapNav = () => {
         mobileNav.classList.toggle("active")
         mobileNav.classList == "active" ? (menu.style.backgroundColor = "var(--error)", menu.textContent = "Close") : (menu.style.backgroundColor = "var(--primary)", menu.textContent = "Menu")
     })
+    document.addEventListener("click", (event) => {
+        if (!mobileNav.contains(event.target) && !menu.contains(event.target)) {
+            mobileNav.classList.remove("active")
+            menu.style.backgroundColor = "var(--primary)", menu.textContent = "Menu"
+        }
+    })
 }
 
 // event on scroll
